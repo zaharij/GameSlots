@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.blacksword.gameslots.MainActivity">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/minus_btn"
+        android:onClick="minusLine"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageButton4"
+        android:background="@android:color/transparent" />
+
+    <TextView
+        android:text=""
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewLine"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageButton4"
+        android:layout_toEndOf="@+id/imageButton4"
+        android:layout_alignBottom="@+id/imageButton4" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/plus_btn"
+        android:onClick="plusLine"
+        android:id="@+id/imageButton9"
+        android:background="@android:color/transparent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textViewLine"
+        android:layout_toEndOf="@+id/textViewLine" />
+
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        app:srcCompat="@android:drawable/screen_background_light_transparent"
+        android:id="@+id/imageV2"
+        android:layout_alignTop="@+id/imageV1"
+        android:layout_toRightOf="@+id/imageV1"
+        android:layout_toEndOf="@+id/imageV1" />
+
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        app:srcCompat="@android:drawable/screen_background_light_transparent"
+        android:id="@+id/imageV3"
+        android:layout_alignTop="@+id/imageV2"
+        android:layout_toRightOf="@+id/imageV2"
+        android:layout_toEndOf="@+id/imageV2" />
+
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        app:srcCompat="@android:drawable/screen_background_light_transparent"
+        android:id="@+id/imageV4"
+        android:layout_alignTop="@+id/imageV3"
+        android:layout_toRightOf="@+id/imageV3"
+        android:layout_toEndOf="@+id/imageV3" />
+
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        app:srcCompat="@android:drawable/screen_background_light_transparent"
+        android:id="@+id/imageV5"
+        android:layout_alignTop="@+id/imageV4"
+        android:layout_toRightOf="@+id/imageV4"
+        android:layout_toEndOf="@+id/imageV4" />
+
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        app:srcCompat="@android:drawable/screen_background_light_transparent"
+        android:id="@+id/imageV6"
+        android:layout_below="@+id/imageV1"
+        android:layout_alignLeft="@+id/imageV1"
+        android:layout_alignStart="@+id/imageV1" />
+
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        app:srcCompat="@android:drawable/screen_background_light_transparent"
+        android:id="@+id/imageV7"
+        android:layout_below="@+id/imageV2"
+        android:layout_toRightOf="@+id/imageV6"
+        android:layout_toEndOf="@+id/imageV6" />
+
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        app:srcCompat="@android:drawable/screen_background_light_transparent"
+        android:id="@+id/imageV8"
+        android:layout_below="@+id/imageV3"
+        android:layout_toRightOf="@+id/imageV7"
+        android:layout_toEndOf="@+id/imageV7" />
+
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        app:srcCompat="@android:drawable/screen_background_light_transparent"
+        android:id="@+id/imageV9"
+        android:layout_below="@+id/imageV3"
+        android:layout_toRightOf="@+id/imageV8"
+        android:layout_toEndOf="@+id/imageV8" />
+
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        app:srcCompat="@android:drawable/screen_background_light_transparent"
+        android:id="@+id/imageV10"
+        android:layout_below="@+id/imageV5"
+        android:layout_toRightOf="@+id/imageV4"
+        android:layout_toEndOf="@+id/imageV4" />
+
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        app:srcCompat="@android:drawable/screen_background_light_transparent"
+        android:id="@+id/imageV12"
+        android:layout_below="@+id/imageV7"
+        android:layout_toRightOf="@+id/imageV11"
+        android:layout_toEndOf="@+id/imageV11" />
+
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        app:srcCompat="@android:drawable/screen_background_light_transparent"
+        android:id="@+id/imageV13"
+        android:layout_below="@+id/imageV7"
+        android:layout_toRightOf="@+id/imageV7"
+        android:layout_toEndOf="@+id/imageV7" />
+
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        app:srcCompat="@android:drawable/screen_background_light_transparent"
+        android:id="@+id/imageV14"
+        android:layout_below="@+id/imageV8"
+        android:layout_toRightOf="@+id/imageV8"
+        android:layout_toEndOf="@+id/imageV8" />
+
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        app:srcCompat="@android:drawable/screen_background_light_transparent"
+        android:id="@+id/imageV15"
+        android:layout_below="@+id/imageV9"
+        android:layout_toRightOf="@+id/imageV9"
+        android:layout_toEndOf="@+id/imageV9" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bet_ten_btn"
+        android:layout_below="@+id/imageV11"
+        android:layout_toLeftOf="@+id/imageV12"
+        android:layout_toStartOf="@+id/imageV12"
+        android:layout_marginTop="28dp"
+        android:onClick="setTenBet"
+        android:id="@+id/imageButtonTe" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bet_twenty_btn"
+        android:layout_alignTop="@+id/imageButtonTe"
+        android:layout_toRightOf="@+id/imageButtonTe"
+        android:layout_toEndOf="@+id/imageButtonTe"
+        android:onClick="setTwentyBet"
+        android:id="@+id/imageButtonTw" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bet_fifty_btn"
+        android:id="@+id/imageButtonF"
+        android:onClick="setFiftyBet"
+        android:layout_alignTop="@+id/imageButtonTw"
+        android:layout_toRightOf="@+id/imageButtonTw"
+        android:layout_toEndOf="@+id/imageButtonTw" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bet_hundr"
+        android:layout_alignTop="@+id/imageButtonF"
+        android:layout_toRightOf="@+id/imageButtonF"
+        android:layout_toEndOf="@+id/imageButtonF"
+        android:onClick="setHundredBet"
+        android:id="@+id/imageButtonHund" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="55px"
+        android:layout_below="@+id/imageButtonTe"
+        android:layout_alignLeft="@+id/imageButtonTe"
+        android:layout_alignStart="@+id/imageButtonTe"
+        android:layout_marginTop="15dp"
+        android:id="@+id/textViewUsersLines"
+        android:layout_alignRight="@+id/imageButtonHund"
+        android:layout_alignEnd="@+id/imageButtonHund" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="55px"
+        android:id="@+id/textViewWinningMoney"
+        android:layout_below="@+id/textViewUsersLines"
+        android:layout_alignLeft="@+id/textViewUsersLines"
+        android:layout_alignStart="@+id/textViewUsersLines"
+        android:layout_alignRight="@+id/textViewUsersLines"
+        android:layout_alignEnd="@+id/textViewUsersLines" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="55px"
+        android:id="@+id/textViewAccount"
+        android:layout_below="@+id/textViewWinningMoney"
+        android:layout_alignLeft="@+id/textViewWinningMoney"
+        android:layout_alignStart="@+id/textViewWinningMoney"
+        android:layout_alignRight="@+id/imageV15"
+        android:layout_alignEnd="@+id/imageV15" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="55px"
+        android:id="@+id/textViewDate"
+        android:layout_below="@+id/textViewAccount"
+        android:layout_alignLeft="@+id/textViewAccount"
+        android:layout_alignStart="@+id/textViewAccount"
+        android:layout_alignRight="@+id/textViewWinningMoney"
+        android:layout_alignEnd="@+id/textViewWinningMoney" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/btn_click"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/imageButtonTw"
+        android:layout_toEndOf="@+id/imageButtonTw"
+        android:id="@+id/imageButtonSpin"
+        android:onClick="startSpinning"
+        android:background="@android:color/transparent" />
+
+    <TextView
+        android:layout_width="130px"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageButtonHund"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/textViewBet"
+        android:layout_above="@+id/textViewWinningMoney" />
+
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="300px"
+        app:srcCompat="@android:drawable/menuitem_background"
+        android:id="@+id/imageViewSlot5"
+        android:src="@drawable/slots_anim"
+        android:layout_alignTop="@+id/imageV4"
+        android:layout_toRightOf="@+id/imageV4"
+        android:layout_toEndOf="@+id/imageV4" />
+
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="300px"
+        app:srcCompat="@android:drawable/menuitem_background"
+        android:id="@+id/imageViewSlot4"
+        android:src="@drawable/slots_anim_2"
+        android:layout_alignTop="@+id/imageV3"
+        android:layout_toRightOf="@+id/imageV3"
+        android:layout_toEndOf="@+id/imageV3" />
+
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="300px"
+        app:srcCompat="@android:drawable/menuitem_background"
+        android:id="@+id/imageViewSlot3"
+        android:src="@drawable/slots_anim"
+        android:layout_alignTop="@+id/imageV3"
+        android:layout_toRightOf="@+id/imageV2"
+        android:layout_toEndOf="@+id/imageV2" />
+
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        app:srcCompat="@android:drawable/screen_background_light_transparent"
+        android:layout_marginTop="39dp"
+        android:id="@+id/imageV1"
+        android:layout_below="@+id/textViewLine"
+        android:layout_toRightOf="@+id/imageButton4"
+        android:layout_toEndOf="@+id/imageButton4" />
+
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        app:srcCompat="@android:drawable/screen_background_light_transparent"
+        android:id="@+id/imageV11"
+        android:layout_below="@+id/imageV6"
+        android:layout_alignLeft="@+id/imageV6"
+        android:layout_alignStart="@+id/imageV6" />
+
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="300px"
+        app:srcCompat="@android:drawable/menuitem_background"
+        android:id="@+id/imageViewSlot2"
+        android:src="@drawable/slots_anim_2"
+        android:layout_alignTop="@+id/imageV2"
+        android:layout_toRightOf="@+id/imageV6"
+        android:layout_toEndOf="@+id/imageV6" />
+
+    <ImageView
+        android:layout_width="100px"
+        android:layout_height="300px"
+        app:srcCompat="@android:drawable/menuitem_background"
+        android:id="@+id/imageViewSlot1"
+        android:src="@drawable/slots_anim"
+        android:layout_alignTop="@+id/imageV2"
+        android:layout_alignLeft="@+id/imageV6"
+        android:layout_alignStart="@+id/imageV6"/>
+</RelativeLayout>
